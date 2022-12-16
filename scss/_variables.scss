@@ -1,0 +1,29 @@
+/*Variables para colores*/
+
+$bg-body: #97969C;
+$bg-nav: rgb(189, 189, 189);
+$bg-h1: black;
+$bg-h2: white;
+$bg-h3: white;
+$bg-banner: #D6D6D6;
+$bg-footer: white;
+$bg-w: black;
+
+$color-h1: beige;
+$color-h2: #530A20;
+$color-h3: #830a2e;
+$color-p: #0b0435;
+$color-f: black;
+$color-w: white;
+
+$border-card: #351D1D;
+
+/*Mixin*/
+@mixin flex-col-cent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Variales dias especiales*/
+$fiesta: ninguna;

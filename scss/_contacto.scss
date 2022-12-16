@@ -1,0 +1,54 @@
+h3 {
+    color: $color-h3;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    background-color: $bg-h3;
+}
+
+/*Formulario*/
+/*Contacto*/
+legend {
+    margin-top: 2rem;
+    align-items: center;
+    text-align: center;
+}
+
+form {
+    @include flex-col-cent;
+    gap: 10px;
+}
+
+.barra-progreso {
+    margin-top: 30px;
+    width: 100%;
+    border: solid 1px;
+    height: 7px;
+}
+
+.barra-completando {
+    border: solid, 1px;
+    height: 6px;
+    width: 100%;
+    background-color: black;
+    animation: cargando 5s infinite;
+}
+
+@keyframes cargando {
+    0% {
+    width: 0;
+    }
+    100% {
+    width: 100%;
+    }
+}
+
+.contacto-opciones {
+    @include flex-col-cent;
+}
+
+.WhatsApp{
+    @extend .botones-generales;
+    background-color: $bg-w;
+    color: $color-w;
+    margin-top: 5px;
+}

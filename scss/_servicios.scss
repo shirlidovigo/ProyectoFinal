@@ -1,0 +1,12 @@
+h3 { color: $color-h3;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    background-color: $bg-h3;
+}
+
+.carrito {
+    @extend .botones-generales;
+    background-color: gray;
+    color: white;
+    margin: 5px;
+}

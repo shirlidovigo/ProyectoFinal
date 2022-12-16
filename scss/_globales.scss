@@ -1,0 +1,99 @@
+* {
+    margin: 0rem;
+    padding: 0rem;
+}
+
+body {
+    font-family: 'Comfortaa', cursive;
+    background-color: $bg-body;
+}
+
+/*Modificando estilos de bootstrap*/
+.color-nav {
+    background-color: $bg-nav;
+    margin: 0;
+}
+
+nav {
+    margin-top: 3rem;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.logo:hover{
+    transform:scale(1.3)
+}
+
+.h1-grid {
+    color: $color-h1;
+    font-size: 2rem;
+    margin-top: 2rem;
+    background-color: $bg-h1;
+    text-align: center;
+    /*Animación*/
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+h2 { color: $color-h2;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    background-color: $bg-h2;
+    text-align: center;
+}
+
+p {
+    color: $color-p;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 2rem;
+}
+
+.footer {
+    color: $color-f;
+    background-color: $bg-footer;
+    justify-content: right;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+/*Extends*/
+.botones-generales {
+font-weight: bold;
+padding: 2.5px 7.5px;
+cursor: pointer;
+border-radius: 6px;
+}
+
+body {
+    @if $fiesta == navidad {
+        background-color: #AC1111
+    } @else if $fiesta == mujer {
+        background-color: #C25B81;
+    } @else if $fiesta == primavera {
+        background-color: #F78154;
+    } @else { 
+        font-family: 'Comfortaa', cursive;
+        background-color: $bg-body;
+    }
+}
